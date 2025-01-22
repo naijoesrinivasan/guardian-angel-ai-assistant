@@ -2,7 +2,7 @@ from datetime import date
 import openai
 import json
 
-openai.api_key = "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"
+openai.api_key = "YOUR_API_KEY"
 function_descriptions = [
     {
         "name": "schedule_task",

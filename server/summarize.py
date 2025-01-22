@@ -1,7 +1,7 @@
 import openai
 
 def text_summarize(text, type=str):
-    openai.api_key="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"
+    openai.api_key="YOUR_API_KEY"
 
     chat_completion = openai.ChatCompletion.create(
         messages=[

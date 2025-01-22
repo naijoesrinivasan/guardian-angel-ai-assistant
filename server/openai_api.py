@@ -3,7 +3,7 @@ import json
 import os
 import requests
 # load and set our key
-openai.api_key = "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"
+openai.api_key = "YOUR_API_KEY"
 
 function_descriptions = [
     {
