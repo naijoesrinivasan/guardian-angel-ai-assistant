@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- custom_toolbar.xml -->
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/white"
+    android:elevation="4dp">
+
+    <!-- Customize your toolbar here -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardian Angel Application"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <!-- Add other views/buttons as needed -->
+
+</androidx.appcompat.widget.Toolbar>

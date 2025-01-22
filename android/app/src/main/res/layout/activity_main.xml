@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F6E8B1"
+    tools:context=".MainActivity">
+    <include layout="@layout/custom_toolbar" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <ProgressBar
+        android:id="@+id/loader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:paddingVertical="15dp"
+        />
+    <TextView
+        android:id="@+id/recording"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recording..."
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginVertical="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="10dp"
+        >
+        <EditText
+            android:id="@+id/bottomTextView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:paddingStart="10dp"
+            android:gravity="center_vertical"
+            android:hint="Your Text Here"
+            android:background="@drawable/rounded_corners_bottom"
+            android:padding="8dp"
+            />
+
+        <ImageView
+            android:id="@+id/micImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="5dp"
+            android:src="@drawable/baseline_mic_24"
+            android:background="@drawable/rounded_corners_bottom"
+            android:padding="8dp"/>
+        <ImageView
+            android:id="@+id/nextArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/baseline_keyboard_arrow_right_24"
+            android:background="@drawable/rounded_corners_bottom"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+</LinearLayout>
