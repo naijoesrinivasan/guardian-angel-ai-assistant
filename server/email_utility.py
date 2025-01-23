@@ -2,8 +2,8 @@ from email.message import EmailMessage
 import smtplib
 import json
 
-PASSWORD = 'dfwj kgdu agyt vsln'
-USER = 'guardianangleMC69420@gmail.com'
+PASSWORD = 'YOUR PASSWORD'
+USER = 'YOUR EMAIL'
 
 def get_emails():
     file = open('emails.json')
